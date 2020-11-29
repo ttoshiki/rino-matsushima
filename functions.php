@@ -165,6 +165,11 @@ function rino_matsushima_scripts()
 }
 add_action('wp_enqueue_scripts', 'rino_matsushima_scripts');
 
+// google fonts
+wp_register_style('cormorant_garamond', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap', array(), '1.0', 'all');
+wp_enqueue_style('cormorant_garamond');
+
+
 /* 投稿アーカイブを有効にしてスラッグを指定する */
 function post_has_archive($args, $post_type)
 {

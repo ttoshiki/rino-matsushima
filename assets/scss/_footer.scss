@@ -1,4 +1,63 @@
 @use "variables";
 
 .footer {
+  padding: 40px 120px 40px 140px;
+  background-color: variables.$gold;
+
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .custom-logo {
+    max-width: 320px;
+    height: auto;
+  }
+
+  &__linkList {
+    display: flex;
+    margin: 0;
+  }
+
+  &__linkItem {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child) {
+      margin-left: 72px;
+    }
+  }
+
+  &__link {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    color: variables.$white;
+    letter-spacing: 2px;
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  &__linkChildItem {
+    margin-top: 6px;
+
+    .footer__link {
+      font-size: 13px;
+    }
+  }
+
+  &__linkChild {
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN",
+      "Yu Mincho", "MS PMincho", serif;
+    font-size: 13px;
+    color: variables.$white;
+    letter-spacing: 1px;
+  }
+
+  &__copyright {
+    font-size: 15px;
+    color: variables.$white;
+    letter-spacing: 2px;
+  }
 }

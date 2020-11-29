@@ -17,7 +17,220 @@ get_header();
 
 	<main class="site-main">
 		<div class="home__wrapper">
-
+			<div class="home__mainVisualWrapper">
+				<picture class="home__mainVisual -back">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mv_back.jpg" alt="">
+				</picture>
+				<picture class="home__mainVisual -front">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mv_front.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/mv_front.png 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/mv_front@2x.png 2x" alt="">
+				</picture>
+			</div>
+			<section class="home__intro">
+				<div class="home__introMain">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01@2x.jpg 2x" alt="">
+					<div class="home__introMainText">
+						<h2 class="home__introHeading">奇跡の一枚を、撮る</h2>
+						<p class="home__introParagraph">
+							まるで友達に撮ってもらったみたいに自然。<br>
+							なのに、自分史上最高に可愛い。
+						</p>
+						<p class="home__introParagraph">
+							そんな欲張りを叶える撮影サービスを<br>
+							ご提供しています。
+						</p>
+						<a href="" class="c-button">Read More</a>
+					</div>
+				</div>
+				<div class="home__introDecoration">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_02@2x.jpg 2x" alt="" class="home__introDecorationImage -lower">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_03@2x.jpg 2x" alt="" class="home__introDecorationImage -upper">
+					<picture class="home__introDecorationText">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_copy.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_copy.png" alt="A piece of beautiful">
+					</picture>
+				</div>
+			</section>
+			<section class="home__service">
+				<h2 class="sectionHeading">SERVICE</h2>
+				<div class="home__serviceBlock l-doubleCol">
+					<div class="home__serviceBlock l-doubleCol__col">
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_01@2x.jpg 2x" alt="">
+							<div class="home__serviceContents">
+								<div class="home__serviceText">
+									<span class="home__serviceCaption">奇跡の１枚を撮る</span>
+									<h3 class="home__serviceHeading">ベアーズ専門のプロフィール撮影サービス</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</div>
+					<div class="home__serviceBlock l-doubleCol__col">
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_02@2x.jpg 2x" alt="">
+							<div class="home__serviceContents">
+								<div class="home__serviceText">
+									<span class="home__serviceCaption">写真に写る自分が好きになる</span>
+									<h3 class="home__serviceHeading">自撮りBoot Camp</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="home__serviceBlock l-singleCol">
+					<div class="home__serviceBlock l-singleCol__col">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_03@2x.jpg 2x" alt="">
+						<div class="home__serviceContents">
+							<div class="home__serviceText">
+								<span class="home__serviceCaption">待望の新サービス登場</span>
+								<h3 class="home__serviceHeading -en">My will Academy</h3>
+							</div>
+							<picture class="home__serviceIcons">
+								<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home__voice">
+				<h2 class="sectionHeading">VOICE</h2>
+				<ul class="home__voiceList">
+					<li class="home__voiceItem">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" alt="">
+						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
+					</li>
+					<li class="home__voiceItem">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" alt="">
+						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
+					</li>
+					<li class="home__voiceItem">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" alt="">
+						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
+					</li>
+				</ul>
+				<div class="home__voiceButton"><a href="" class="c-button">Read More</a></div>
+			</section>
+			<picture class="home__sectionImage">
+				<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/section_bg.jpg" media="(max-width: 480px)">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/section_bg.jpg" alt="">
+			</picture>
+			<section class="home__column">
+				<h2 class="sectionHeading">COLUMN</h2>
+				<div class="home__columnWrapper">
+					<article class="home__columnItem">
+						<a href="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+							<div class="home__columnContents">
+								<div class="home__columnText">
+									<div class="home__columnMeta">
+										<span class="home__columnCategory -en">CATEGORY</span>
+										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
+									</div>
+									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</article>
+					<article class="home__columnItem">
+						<a href="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+							<div class="home__columnContents">
+								<div class="home__columnText">
+									<div class="home__columnMeta">
+										<span class="home__columnCategory -en">CATEGORY</span>
+										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
+									</div>
+									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</article>
+					<article class="home__columnItem">
+						<a href="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+							<div class="home__columnContents">
+								<div class="home__columnText">
+									<div class="home__columnMeta">
+										<span class="home__columnCategory -en">CATEGORY</span>
+										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
+									</div>
+									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</article>
+					<article class="home__columnItem">
+						<a href="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+							<div class="home__columnContents">
+								<div class="home__columnText">
+									<div class="home__columnMeta">
+										<span class="home__columnCategory -en">CATEGORY</span>
+										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
+									</div>
+									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</article>
+					<article class="home__columnItem">
+						<a href="">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+							<div class="home__columnContents">
+								<div class="home__columnText">
+									<div class="home__columnMeta">
+										<span class="home__columnCategory -en">CATEGORY</span>
+										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
+									</div>
+									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
+							</div>
+						</a>
+					</article>
+				</div>
+			</section>
+			<section class="home__banners">
+				<a href="" class="home__bannerLink">
+					<picture class="home__banner">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.png" alt="撮影のご予約受付はLINE@から受付！最新情報も配信します。">
+					</picture>
+				</a>
+				<a href="" class="home__bannerLink">
+					<picture class="home__banner">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.webp" type="image/webp">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.png" alt="AMEBA BLOG 代表 松嶋りの のライフスタイルや、日々の出来事を更新！">
+					</picture>
+				</a>
+			</section>
 		</div>
 	</main><!-- #main -->
 

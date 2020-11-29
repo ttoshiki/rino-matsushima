@@ -1,1 +1,23 @@
-@import "variables";
+@use "variables";
+
+.l-singleCol {
+  width: variables.$content-width-xl;
+  margin: 0 auto;
+
+  &__col {
+    display: flex;
+  }
+}
+
+.l-doubleCol {
+  display: flex;
+  justify-content: center;
+  width: variables.$content-width-xl;
+  margin: 0 auto;
+
+  &__col {
+    &:not(:first-child) {
+      margin-left: 64px;
+    }
+  }
+}

@@ -1,4 +1,37 @@
 @use "variables";
 
 .header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 56px 0 40px;
+
+    .menu {
+      display: flex;
+
+      li {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 17px;
+        letter-spacing: 2px;
+
+        &:not(:first-child) {
+          margin-left: 40px;
+        }
+      }
+
+      a {
+        color: variables.$white;
+      }
+    }
+
+    .custom-logo {
+      max-width: 320px;
+      height: auto;
+    }
+  }
 }
