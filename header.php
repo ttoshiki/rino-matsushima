@@ -41,10 +41,12 @@
 				</div>
 			</div>
 		</div>
-		<nav class="header__nav -pc<?php if (!is_front_page()) { echo ' -hasLogo'; } ?>">
-			<?php
-				the_custom_logo();
-			?>
+		<nav class="header__nav -pc <?php if(is_page('about')){ echo '-hasLogoBgColor';} ?>">
+			<span class="header__logoWrapper">
+				<?php
+					the_custom_logo();
+				?>
+			</span>
 			<?php
 				wp_nav_menu(array(
 					'theme_location' => 'primary'

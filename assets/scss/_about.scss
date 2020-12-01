@@ -1,0 +1,174 @@
+@use "variables";
+
+.about {
+  &__mainVisualWrapper {
+    position: relative;
+    height: 39vw;
+    min-height: 420px;
+  }
+
+  &__mainVisual {
+    position: absolute;
+
+    &.-front {
+      right: 0;
+      width: 84%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &.-back {
+      top: 31%;
+      height: 26vw;
+      min-height: 292px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    font-size: 44px;
+    color: variables.$white;
+    text-shadow: 0px 0px 15px rgba(217, 104, 137, 0.67);
+    letter-spacing: 8px;
+    transform: translate(-50%, -50%);
+  }
+
+  &__message {
+    position: relative;
+    width: 1160px;
+    padding: 0 48px;
+    margin: 80px auto 0;
+
+    .sectionHeading {
+      text-align: left;
+    }
+  }
+
+  &__messageText {
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+  }
+
+  &__messageParagraph {
+    margin-top: 40px;
+    font-size: 17px;
+    line-height: 2.35;
+    letter-spacing: 1px;
+  }
+
+  &__messagePhoto {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    width: 51.8%;
+  }
+
+  &__value {
+    margin-top: 130px;
+  }
+
+  &__valueList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1296px;
+    padding: 0 48px;
+    margin: 0 auto;
+  }
+
+  &__valueItem {
+    width: 29.2%;
+
+    &:nth-child(2) {
+      margin-top: 72px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 144px;
+    }
+  }
+
+  &__valueNumberWrapper {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      width: 80%;
+      height: 1px;
+      content: "";
+      background-color: #d1c1a0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__valueNumber {
+    font-size: 72px;
+    line-height: 0.3;
+    color: #d1c1a0;
+    letter-spacing: 12px;
+  }
+
+  &__valueHeading {
+    margin-top: 14px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #d1c1a0;
+    letter-spacing: 2px;
+  }
+
+  &__valueParagraph {
+    line-height: 2.3;
+  }
+
+  &__profile {
+    padding: 48px 0 126px;
+    margin: 100px auto 0;
+    background-image: url(assets/images/about/profile_bg.jpg);
+    background-size: cover;
+  }
+
+  &__profileContents {
+    display: flex;
+    max-width: 1296px;
+    margin: 64px auto 0;
+  }
+
+  &__profileText {
+    margin: 24px 0 0 64px;
+  }
+
+  &__profilePosition {
+    font-size: 15px;
+    color: #d1c1a0;
+    letter-spacing: 3px;
+  }
+
+  &__profileNameWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profileName {
+    margin-left: 40px;
+    font-size: 30px;
+    color: #d1c1a0;
+    letter-spacing: 3px;
+  }
+
+  &__profileParagraph {
+    margin-top: 36px;
+    font-size: 15px;
+    line-height: 2.3;
+  }
+}

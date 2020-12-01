@@ -23,9 +23,8 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
-    "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic",
-    Verdana, Meiryo, sans-serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
   font-size: 14px;
   line-height: 1.5;
   color: variables.$gray;
@@ -40,6 +39,11 @@ ol {
 
 a {
   text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 img {

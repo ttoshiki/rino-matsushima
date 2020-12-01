@@ -53,8 +53,9 @@
     margin: 8px 0 5.55vw;
     margin-bottom: clamp(80px, 5.55vw, 96px);
     font-size: 50px;
+    font-weight: 500;
     color: variables.$gray;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
   }
 
   &__introParagraph {
@@ -123,12 +124,14 @@
     display: block;
     margin-top: 10px;
     font-size: 17px;
+    letter-spacing: 2px;
   }
 
   &__serviceHeading {
     margin: 8px 0 0;
     font-size: 23px;
     font-weight: 400;
+    letter-spacing: 1px;
 
     &.-en {
       letter-spacing: 2px;

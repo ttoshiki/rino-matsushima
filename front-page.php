@@ -104,15 +104,15 @@ get_header();
 				<h2 class="sectionHeading">VOICE</h2>
 				<ul class="home__voiceList">
 					<li class="home__voiceItem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image@2x.jpg 2x" alt="">
 						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
 					</li>
 					<li class="home__voiceItem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_02_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_02_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/voice_02_image@2x.jpg 2x" alt="">
 						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
 					</li>
 					<li class="home__voiceItem">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_01_image.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_03_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_03_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/voice_03_image@2x.jpg 2x" alt="">
 						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
 					</li>
 				</ul>
@@ -125,96 +125,30 @@ get_header();
 			<section class="home__column">
 				<h2 class="sectionHeading">COLUMN</h2>
 				<div class="home__columnWrapper">
-					<article class="home__columnItem">
-						<a href="">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
-							<div class="home__columnContents">
-								<div class="home__columnText">
-									<div class="home__columnMeta">
-										<span class="home__columnCategory -en">CATEGORY</span>
-										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
+					<?php if (have_posts()): ?>
+						<?php while (have_posts()) : the_post(); ?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class('home__columnItem'); ?>>
+								<a href="<?php the_permalink(); ?>">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+									<div class="home__columnContents">
+										<div class="home__columnText">
+											<div class="home__columnMeta">
+												<span class="home__columnCategory -en">CATEGORY</span>
+												<time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="home__columnPostTime"><?php echo get_the_date('Y/m/d'); ?></time>
+											</div>
+											<h3 class="home__columnTitle"><?php echo get_the_title(); ?></h3>
+										</div>
+										<picture class="home__serviceIcons">
+											<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+											<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+										</picture>
 									</div>
-									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
-								</div>
-								<picture class="home__serviceIcons">
-									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-								</picture>
-							</div>
-						</a>
-					</article>
-					<article class="home__columnItem">
-						<a href="">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
-							<div class="home__columnContents">
-								<div class="home__columnText">
-									<div class="home__columnMeta">
-										<span class="home__columnCategory -en">CATEGORY</span>
-										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
-									</div>
-									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
-								</div>
-								<picture class="home__serviceIcons">
-									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-								</picture>
-							</div>
-						</a>
-					</article>
-					<article class="home__columnItem">
-						<a href="">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
-							<div class="home__columnContents">
-								<div class="home__columnText">
-									<div class="home__columnMeta">
-										<span class="home__columnCategory -en">CATEGORY</span>
-										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
-									</div>
-									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
-								</div>
-								<picture class="home__serviceIcons">
-									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-								</picture>
-							</div>
-						</a>
-					</article>
-					<article class="home__columnItem">
-						<a href="">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
-							<div class="home__columnContents">
-								<div class="home__columnText">
-									<div class="home__columnMeta">
-										<span class="home__columnCategory -en">CATEGORY</span>
-										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
-									</div>
-									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
-								</div>
-								<picture class="home__serviceIcons">
-									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-								</picture>
-							</div>
-						</a>
-					</article>
-					<article class="home__columnItem">
-						<a href="">
-							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
-							<div class="home__columnContents">
-								<div class="home__columnText">
-									<div class="home__columnMeta">
-										<span class="home__columnCategory -en">CATEGORY</span>
-										<time datetime="2020-01-01" class="home__columnPostTime">2020/01/01</time>
-									</div>
-									<h3 class="home__columnTitle">ブログタイトルブログタイトル</h3>
-								</div>
-								<picture class="home__serviceIcons">
-									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-								</picture>
-							</div>
-						</a>
-					</article>
+								</a>
+							</article>
+						<?php endwhile; ?>
+						<?php else: ?>
+							<p>準備中です</p>
+						<?php endif; ?>
 				</div>
 			</section>
 			<section class="home__banners">
