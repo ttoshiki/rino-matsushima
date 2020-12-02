@@ -21,13 +21,25 @@ get_header();
 				<picture class="home__mainVisual -back">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mv_back.jpg" alt="">
 				</picture>
-				<picture class="home__mainVisual -front">
+				<picture class="home__mainVisual -front -pc">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mv_front.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/mv_front.png 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/mv_front@2x.png 2x" alt="">
+				</picture>
+				<picture class="home__mainVisual -upper -sp">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_photo01-sp.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_photo01-sp.png 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_photo01-sp@2x.png 2x" alt="">
+				</picture>
+				<picture class="home__mainVisual -lower -sp">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_photo02-sp.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_photo02-sp.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_photo02-sp@2x.jpg 2x" alt="">
+				</picture>
+				<picture class="home__mainVisual -center -sp">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_copy-sp.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_copy-sp.png 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/mainVisual_copy-sp@2x.png 2x" alt="">
 				</picture>
 			</div>
 			<section class="home__intro">
 				<div class="home__introMain">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01@2x.jpg 2x" alt="">
+					<picture class="home__introPicture -center -sp">
+						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01-sp.jpg" media="(max-width: 480px)">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01@2x.jpg 2x" alt="">
+					</picture>
 					<div class="home__introMainText">
 						<h2 class="home__introHeading">奇跡の一枚を、撮る</h2>
 						<p class="home__introParagraph">
@@ -39,9 +51,10 @@ get_header();
 							ご提供しています。
 						</p>
 						<a href="" class="c-button">Read More</a>
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_lower-sp.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_lower-sp.png 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_lower-sp@2x.png 2x" alt="" class="home__introDecorationImage -lower -sp">
 					</div>
 				</div>
-				<div class="home__introDecoration">
+				<div class="home__introDecoration -pc">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_02@2x.jpg 2x" alt="" class="home__introDecorationImage -lower">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_03@2x.jpg 2x" alt="" class="home__introDecorationImage -upper">
 					<picture class="home__introDecorationText">
@@ -109,11 +122,11 @@ get_header();
 					</li>
 					<li class="home__voiceItem">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_02_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_02_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/voice_02_image@2x.jpg 2x" alt="">
-						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
+						<p class="home__voiceParagraph">やっぱり、りのさんに頼んで良かった！<br>自分だけでは絶対に撮れない写真をたくさん撮ってもらえました♡</p>
 					</li>
 					<li class="home__voiceItem">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_03_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/voice_03_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/voice_03_image@2x.jpg 2x" alt="">
-						<p class="home__voiceParagraph">ナチュラルな笑顔を引き出す天才です！<br>笑いながらあっという間に自然体で素敵なお写真が撮れていました。</p>
+						<p class="home__voiceParagraph">ネット婚活をしてる方全員！<br>速やかに申し込んで写真を撮ってもらってください！笑</p>
 					</li>
 				</ul>
 				<div class="home__voiceButton"><a href="" class="c-button">Read More</a></div>

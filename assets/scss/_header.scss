@@ -33,6 +33,7 @@
     .custom-logo {
       max-width: 320px;
       height: auto;
+      filter: brightness(200%);
     }
 
     .custom-logo-link {
@@ -59,5 +60,120 @@
   &__logoWrapper {
     display: inline-block;
     margin-left: 40px;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .header {
+    &.-fixed {
+      position: fixed;
+      background-color: variables.$white;
+
+      .custom-logo {
+        filter: none;
+      }
+    }
+
+    &__nav {
+      &.-pc {
+        display: none;
+      }
+    }
+
+    &__hammenu {
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 6px 0 24px;
+    }
+
+    &__hammenuWrapper {
+      position: fixed;
+      top: 52px;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: calc(100vh - 52px);
+      background-color: rgba($color: #fe90a3, $alpha: 0.8);
+
+      li a {
+        padding: 2px 4px;
+        font-size: 18px;
+        font-weight: 600;
+        color: variables.$white;
+      }
+
+      li {
+        text-align: center;
+        letter-spacing: 3px;
+
+        &:not(:first-child) {
+          margin-top: 17.6vw;
+        }
+      }
+    }
+
+    .custom-logo {
+      width: 90%;
+      max-width: 220px;
+      height: auto;
+      filter: brightness(200%);
+    }
+
+    &__trigger,
+    &__trigger span {
+      box-sizing: border-box;
+      display: inline-block;
+      transition: all 0.4s;
+    }
+
+    &__trigger {
+      position: relative;
+      width: 52px;
+      height: 52px;
+    }
+
+    &__trigger span {
+      position: absolute;
+      left: 50%;
+      width: 26px;
+      height: 2px;
+      background-color: #fff;
+
+      &:first-of-type {
+        transform: translate(-50%, 16px);
+      }
+
+      &:nth-of-type(2) {
+        top: 48%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-of-type(3) {
+        transform: translate(-50%, 32px);
+      }
+    }
+
+    &__trigger.active span,
+    &.-fixed .header__trigger span {
+      background-color: #fe90a3;
+    }
+
+    &__trigger.active span:nth-of-type(1) {
+      -webkit-transform: translate(-12px, 26px) rotate(-45deg);
+      transform: translate(-12px, 26px) rotate(-45deg);
+    }
+    &__trigger.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+    &__trigger.active span:nth-of-type(3) {
+      -webkit-transform: translate(-12px, 26px) rotate(-45deg);
+      transform: translate(-12px, 26px) rotate(45deg);
+    }
   }
 }

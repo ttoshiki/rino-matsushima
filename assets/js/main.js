@@ -16,7 +16,7 @@ jQuery(function() {
   heroBottom;
 
   _window.on("scroll", function () {
-    heroBottom = 94;
+    heroBottom = 52;
     if (_window.scrollTop() > heroBottom) {
       _header.addClass("-fixed");
     } else {

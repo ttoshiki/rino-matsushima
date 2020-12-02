@@ -37,3 +37,11 @@
   text-align: center;
   letter-spacing: 14px;
 }
+
+@include variables.mq(variables.$mobile) {
+  .sectionHeading {
+    margin: 0 0 24px;
+    font-size: 33px;
+    letter-spacing: 7px;
+  }
+}

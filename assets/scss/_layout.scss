@@ -21,3 +21,24 @@
     }
   }
 }
+
+@include variables.mq(variables.$mobile) {
+  .l-singleCol,
+  .l-doubleCol {
+    width: 100%;
+  }
+
+  .l-singleCol {
+    &__col {
+      flex-direction: column;
+    }
+  }
+
+  .l-doubleCol {
+    &__col {
+      &:not(:first-child) {
+        margin: 56px auto 0;
+      }
+    }
+  }
+}

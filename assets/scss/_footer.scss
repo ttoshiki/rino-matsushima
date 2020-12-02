@@ -13,6 +13,7 @@
   .custom-logo {
     max-width: 320px;
     height: auto;
+    filter: brightness(200%);
   }
 
   &__linkList {
@@ -60,5 +61,26 @@
     font-size: 15px;
     color: variables.$white;
     letter-spacing: 2px;
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .footer {
+    min-width: auto;
+    padding: 0 0 24px;
+
+    &__upper {
+      flex-direction: column;
+    }
+
+    &__link {
+      font-size: 13px;
+    }
+
+    &__copyright {
+      display: block;
+      font-size: 12px;
+      text-align: center;
+    }
   }
 }
