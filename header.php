@@ -51,6 +51,8 @@
 		<nav class="header__nav -pc<?php
 		 if ( is_page('about') || !(is_front_page()) ) {
 			 echo ' -hasLogoBgColor';
+			} elseif( is_front_page()) {
+				echo ' -home';
 			} ?>">
 			<span class="header__logoWrapper">
 				<?php

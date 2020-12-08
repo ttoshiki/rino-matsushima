@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding-right: 56px;
-    margin-top: 6px;
+    margin-top: 17px;
 
     &.-fixed {
       position: fixed;
@@ -34,6 +34,14 @@
       & + .header__catch {
         padding-top: 90px;
       }
+
+      &.-home.-hasLogoBgColor .header__logoWrapper {
+        background-color: #fe90a4;
+      }
+    }
+
+    &.-home.-hasLogoBgColor .header__logoWrapper {
+      background-color: transparent;
     }
 
     .menu {

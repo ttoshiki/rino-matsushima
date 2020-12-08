@@ -4,10 +4,11 @@ jQuery(function() {
   jQuery('a[href^="#"]').on('click', function(){
     var speed = 300;
     var href= jQuery(this).attr("href");
-    var target = jQuery(href == "#" || href == "" ? 'html' : href);
+    var target = jQuery(href == "#" || href == "" || href == "" ? 'html' : href);
     var position = target.offset().top;
     jQuery("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
+    console.log('hoge')
   });
 
   // ヘッダースクロール時固定
@@ -50,6 +51,12 @@ jQuery(function() {
     jQuery(this).toggleClass('-opened')
     jQuery(".header__trigger").toggleClass('active');
   });
+
+  // spメニューページ内リンク
+  jQuery(".header .menu a").on("click", function() {
+    jQuery(".header__hammenuWrapper").css('display', 'none');
+    jQuery(".header__trigger").removeClass('-opened');
+  })
 
   // fadein
   jQuery(function () {

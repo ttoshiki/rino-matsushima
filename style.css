@@ -159,6 +159,8 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
 }
 
 .l-doubleCol {
@@ -176,6 +178,8 @@ textarea {
 }
 .l-doubleCol__col a {
   display: block;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
 }
 
 @media screen and (max-width: 480px) {
@@ -211,7 +215,7 @@ textarea {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-right: 56px;
-  margin-top: 6px;
+  margin-top: 17px;
 }
 .header__nav.-fixed {
   position: fixed;
@@ -233,6 +237,12 @@ textarea {
 }
 .header__nav.-fixed + .header__catch {
   padding-top: 90px;
+}
+.header__nav.-fixed.-home.-hasLogoBgColor .header__logoWrapper {
+  background-color: #fe90a4;
+}
+.header__nav.-home.-hasLogoBgColor .header__logoWrapper {
+  background-color: transparent;
 }
 .header__nav .menu {
   display: -webkit-box;
@@ -584,6 +594,8 @@ textarea {
 }
 .home__introMain img {
   width: 100%;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
 }
 .home__introPicture {
   width: 45%;
@@ -613,6 +625,7 @@ textarea {
   position: absolute;
   top: 66%;
   right: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -623,6 +636,10 @@ textarea {
 }
 .home__introDecorationText img {
   max-width: 518px;
+}
+.home__introDecorationImage {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
 }
 .home__introDecorationImage.-upper {
   position: absolute;
@@ -635,16 +652,20 @@ textarea {
   right: 14%;
 }
 .home__service {
-  margin-top: 440px;
+  padding-top: 63px;
 }
 .home__service .l-singleCol {
-  margin-top: 80px;
+  margin-top: 17px;
 }
 .home__service .l-singleCol .home__serviceContents {
   padding: 0 32px;
 }
 .home__service .sectionHeading {
   margin-bottom: 32px;
+}
+.home #service {
+  padding-top: 63px;
+  margin-top: 314px;
 }
 .home__serviceContents {
   display: -webkit-box;
@@ -656,14 +677,13 @@ textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 12px 20px;
 }
 .home__serviceText {
   color: #6b6b6b;
 }
 .home__serviceCaption {
   display: block;
-  margin-top: 10px;
   font-size: 17px;
   letter-spacing: 2px;
 }
@@ -694,6 +714,15 @@ textarea {
   position: absolute;
   right: 24px;
   bottom: 24px;
+}
+.home #profile,
+.home #selfy,
+.home #column {
+  padding-top: 63px;
+  margin-top: -63px;
+}
+.home #academy {
+  padding-top: 63px;
 }
 .home__voice {
   padding: 56px 0 100px;
@@ -737,6 +766,10 @@ textarea {
   height: 75px;
   background-image: url(assets/images/home/voice_03_text.png);
 }
+.home__voiceItem img {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+}
 .home__voiceParagraph {
   margin: 8px 0 0;
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
@@ -753,7 +786,7 @@ textarea {
   width: 100%;
 }
 .home__column {
-  margin: 140px 0 0;
+  margin: 126px 0 0;
 }
 .home__column .sectionHeading {
   margin-bottom: 32px;
@@ -861,6 +894,10 @@ textarea {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .home__introMain img {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
   .home__introPicture {
     width: 100%;
   }
@@ -893,6 +930,9 @@ textarea {
     bottom: -80%;
     width: 92%;
   }
+  .home #service {
+    margin-top: -106px;
+  }
   .home__service {
     margin-top: 332px;
   }
@@ -900,7 +940,7 @@ textarea {
     margin-bottom: 24px;
   }
   .home__service .l-singleCol {
-    margin-top: 56px;
+    margin-top: -24px;
   }
   .home__service .l-singleCol .home__serviceContents {
     padding: 0 12px;
@@ -908,6 +948,12 @@ textarea {
   .home__service .l-singleCol .home__serviceIcons {
     right: 11px;
     bottom: auto;
+  }
+  .home__serviceText {
+    padding: 12px 0 14px;
+  }
+  .home #selfy {
+    margin-top: -26px;
   }
   .home__serviceBlock {
     -webkit-box-orient: vertical;
@@ -1086,6 +1132,10 @@ textarea {
   right: 0;
   width: 51.8%;
 }
+.about__messagePhoto img {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+}
 .about__value {
   margin-top: 130px;
 }
@@ -1151,6 +1201,10 @@ textarea {
   display: flex;
   max-width: 1296px;
   margin: 64px auto 0;
+}
+.about__profileContents > img {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
 }
 .about__profileText {
   margin: 24px 0 0 64px;

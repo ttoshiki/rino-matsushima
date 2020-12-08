@@ -50,7 +50,7 @@ get_header();
 							そんな欲張りを叶える撮影サービスを<br>
 							ご提供しています。
 						</p>
-						<a href="" class="c-button">Read More</a>
+						<a href="<?php echo home_url('/about/') ?>" class="c-button">Read More</a>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_lower-sp.png" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_lower-sp.png 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_lower-sp@2x.png 2x" alt="" class="home__introDecorationImage -lower -sp">
 					</div>
 				</div>
@@ -64,10 +64,10 @@ get_header();
 				</div>
 			</section>
 			<section class="home__service">
-				<h2 class="sectionHeading">SERVICE</h2>
-				<div class="home__serviceBlock l-doubleCol">
+				<h2 class="sectionHeading" id="service">SERVICE</h2>
+				<div class="home__serviceBlock l-doubleCol" id="profile">
 					<div class="home__serviceBlock l-doubleCol__col">
-						<a href="#">
+						<a href="https://ameblo.jp/happyfreedomrrr/entry-12462441316.html" target="_blank" noopener>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_01@2x.jpg 2x" alt="">
 							<div class="home__serviceContents">
 								<div class="home__serviceText">
@@ -81,8 +81,8 @@ get_header();
 							</div>
 						</a>
 					</div>
-					<div class="home__serviceBlock l-doubleCol__col">
-						<a href="#">
+					<div class="home__serviceBlock l-doubleCol__col" id="selfy">
+						<a href="https://ameblo.jp/happyfreedomrrr/entry-12613487278.html" target="_blank" noopener>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_02.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_02.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_02@2x.jpg 2x" alt="">
 							<div class="home__serviceContents">
 								<div class="home__serviceText">
@@ -97,9 +97,9 @@ get_header();
 						</a>
 					</div>
 				</div>
-				<div class="home__serviceBlock l-singleCol">
+				<div class="home__serviceBlock l-singleCol" id="academy">
 					<div class="home__serviceBlock l-singleCol__col">
-						<a href="#">
+						<a href="#" target="_blank" noopener>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_03@2x.jpg 2x" alt="">
 							<div class="home__serviceContents">
 								<div class="home__serviceText">
@@ -115,7 +115,7 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<section class="home__voice">
+			<section class="home__voice" id="voice">
 				<h2 class="sectionHeading">VOICE</h2>
 				<ul class="home__voiceList">
 					<li class="home__voiceItem">
@@ -131,14 +131,14 @@ get_header();
 						<p class="home__voiceParagraph">ネット婚活をしてる方全員！<br>速やかに申し込んで写真を撮ってもらってください！笑</p>
 					</li>
 				</ul>
-				<div class="home__voiceButton"><a href="" class="c-button">Read More</a></div>
+				<div class="home__voiceButton"><a href="https://peraichi.com/landing_pages/view/photopairs" target="_blank" noopener class="c-button">Read More</a></div>
 			</section>
 			<picture class="home__sectionImage">
 				<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/section_bg.jpg" media="(max-width: 480px)">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/section_bg.jpg" alt="">
 			</picture>
 			<section class="home__column">
-				<h2 class="sectionHeading">COLUMN</h2>
+				<h2 class="sectionHeading" id="column">COLUMN</h2>
 				<div class="home__columnWrapper">
 					<?php if (have_posts()): ?>
 						<?php while (have_posts()) : the_post(); ?>
@@ -172,13 +172,13 @@ get_header();
 				</div>
 			</section>
 			<section class="home__banners">
-				<a href="" class="home__bannerLink">
+				<a href="https://line.me/R/ti/p/%40lba7985t" class="home__bannerLink" target="_blank" noopener>
 					<picture class="home__banner">
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.webp" type="image/webp">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.jpg" alt="撮影のご予約受付はLINE@から受付！最新情報も配信します。">
 					</picture>
 				</a>
-				<a href="" class="home__bannerLink">
+				<a href="https://ameblo.jp/happyfreedomrrr/" class="home__bannerLink" target="_blank" noopener>
 					<picture class="home__banner">
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.webp" type="image/webp">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.jpg" alt="AMEBA BLOG 代表 松嶋りの のライフスタイルや、日々の出来事を更新！">
