@@ -45,7 +45,10 @@ get_header();
 						『写真を通じて、女性の自己肯定感をあげる』ことを使命として、それぞれの魅力の素晴らしさを伝えていきたいと思います。
 					</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/about/message_image@2x.jpg 2x" alt="" class="about__messagePhoto">
+				<picture class="about__messagePhoto">
+					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image-sp@2x.jpg" media="(max-width: 480px)">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image@2x.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/about/message_image@2x.jpg 2x" alt="">
+				</picture>
 			</section>
 			<section class="about__value">
 				<h2 class="sectionHeading">VALUE</h2>
@@ -83,7 +86,7 @@ get_header();
 			<section class="about__profile">
 				<h2 class="sectionHeading">PROFILE</h2>
 				<div class="about__profileContents">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/president_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/president_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/about/president_image@2x.jpg 2x" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/president_image.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/president_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/about/president_image@2x.jpg 2x" alt="" class="about__profilePhoto">
 					<div class="about__profileText">
 						<div class="about__profileNameWrapper">
 							<span class="about__profilePosition">Mywill 代表</span><span class="about__profileName">松嶋 りの</span>

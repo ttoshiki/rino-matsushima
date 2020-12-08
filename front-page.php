@@ -36,9 +36,9 @@ get_header();
 			</div>
 			<section class="home__intro">
 				<div class="home__introMain">
-					<picture class="home__introPicture -center -sp">
+					<picture class="home__introPicture -center">
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01-sp.jpg" media="(max-width: 480px)">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01@2x.jpg 2x" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/intro_01@2x.jpg" alt="">
 					</picture>
 					<div class="home__introMainText">
 						<h2 class="home__introHeading">奇跡の一枚を、撮る</h2>
@@ -99,17 +99,19 @@ get_header();
 				</div>
 				<div class="home__serviceBlock l-singleCol">
 					<div class="home__serviceBlock l-singleCol__col">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_03@2x.jpg 2x" alt="">
-						<div class="home__serviceContents">
-							<div class="home__serviceText">
-								<span class="home__serviceCaption">待望の新サービス登場</span>
-								<h3 class="home__serviceHeading -en">My will Academy</h3>
+						<a href="#">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_03@2x.jpg 2x" alt="">
+							<div class="home__serviceContents">
+								<div class="home__serviceText">
+									<span class="home__serviceCaption">待望の新サービス登場</span>
+									<h3 class="home__serviceHeading -en">My will Academy</h3>
+								</div>
+								<picture class="home__serviceIcons">
+									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
+								</picture>
 							</div>
-							<picture class="home__serviceIcons">
-								<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-							</picture>
-						</div>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -146,7 +148,12 @@ get_header();
 									<div class="home__columnContents">
 										<div class="home__columnText">
 											<div class="home__columnMeta">
-												<span class="home__columnCategory -en">CATEGORY</span>
+												<span class="home__columnCategory -en">
+													<?php
+														$category = get_the_category();
+														echo $category[0]->cat_name;
+													?>
+												</span>
 												<time datetime="<?php echo get_the_date('Y-m-d'); ?>" class="home__columnPostTime"><?php echo get_the_date('Y/m/d'); ?></time>
 											</div>
 											<h3 class="home__columnTitle"><?php echo get_the_title(); ?></h3>
@@ -168,13 +175,13 @@ get_header();
 				<a href="" class="home__bannerLink">
 					<picture class="home__banner">
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.webp" type="image/webp">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.png" alt="撮影のご予約受付はLINE@から受付！最新情報も配信します。">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_line.jpg" alt="撮影のご予約受付はLINE@から受付！最新情報も配信します。">
 					</picture>
 				</a>
 				<a href="" class="home__bannerLink">
 					<picture class="home__banner">
 						<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.webp" type="image/webp">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.png" alt="AMEBA BLOG 代表 松嶋りの のライフスタイルや、日々の出来事を更新！">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/banner_ameba.jpg" alt="AMEBA BLOG 代表 松嶋りの のライフスタイルや、日々の出来事を更新！">
 					</picture>
 				</a>
 			</section>

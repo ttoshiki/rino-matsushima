@@ -5,7 +5,9 @@
   margin: 0 auto;
 
   &__col {
-    display: flex;
+    a {
+      display: flex;
+    }
   }
 }
 
@@ -19,6 +21,10 @@
     &:not(:first-child) {
       margin-left: 64px;
     }
+
+    a {
+      display: block;
+    }
   }
 }
 
@@ -30,14 +36,16 @@
 
   .l-singleCol {
     &__col {
-      flex-direction: column;
+      a {
+        flex-direction: column;
+      }
     }
   }
 
   .l-doubleCol {
     &__col {
       &:not(:first-child) {
-        margin: 56px auto 0;
+        margin: 48px auto 0;
       }
     }
   }

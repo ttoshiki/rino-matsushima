@@ -15,6 +15,13 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="<?php bloginfo('template_url'); ?>/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_url'); ?>/css/style.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_url'); ?>/css/page.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_url'); ?>/css/responsive.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_url'); ?>/css/page-responsive.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_url'); ?>/css/animate.css" rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 
@@ -22,7 +29,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<header id="header" class="header">
-		<div class="header__hammenu -sp">
+		<div class="header__hammenu -sp <?php if(is_page('about')){ echo '-hasLogoBgColor';} ?>">
 			<?php
 				the_custom_logo();
 			?>
@@ -41,7 +48,10 @@
 				</div>
 			</div>
 		</div>
-		<nav class="header__nav -pc <?php if(is_page('about')){ echo '-hasLogoBgColor';} ?>">
+		<nav class="header__nav -pc<?php
+		 if ( is_page('about') || !(is_front_page()) ) {
+			 echo ' -hasLogoBgColor';
+			} ?>">
 			<span class="header__logoWrapper">
 				<?php
 					the_custom_logo();

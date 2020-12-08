@@ -172,3 +172,149 @@
     line-height: 2.3;
   }
 }
+
+@include variables.mq(variables.$mobile) {
+  .about {
+    &__mainVisualWrapper {
+      height: 73vw;
+      min-height: auto;
+    }
+
+    &__mainVisual {
+      &.-front {
+        width: 87%;
+        height: 63vw;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &.-back {
+        top: 0;
+        width: 88%;
+        height: 73vw;
+        min-height: auto;
+      }
+    }
+
+    &__heading {
+      top: 43%;
+      font-size: 33px;
+    }
+
+    &__message {
+      width: 100%;
+      padding: 0 16px;
+      margin: 48px auto 0;
+    }
+
+    &__messageText {
+      z-index: auto;
+    }
+
+    &__messagePhoto {
+      position: relative;
+      top: auto;
+    }
+
+    &__messageParagraph {
+      margin-top: 24px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    &__messagePhoto {
+      display: block;
+      width: 100%;
+      margin-top: 32px;
+
+      img {
+        box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+      }
+    }
+
+    &__value {
+      margin-top: 80px;
+    }
+
+    &__valueList {
+      flex-direction: column;
+      padding: 0 16px;
+    }
+
+    &__valueItem {
+      width: 100%;
+    }
+
+    &__valueNumber {
+      font-size: 44px;
+      letter-spacing: 8px;
+    }
+
+    &__valueHeading {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    &__valueParagraph {
+      line-height: 2.2;
+    }
+
+    &__profileContents {
+      flex-direction: column;
+    }
+
+    &__profile {
+      padding: 40px 0 96px;
+      margin: 64px auto 0;
+    }
+
+    &__valueItem:nth-child(2),
+    &__valueItem:nth-child(3) {
+      margin-top: 48px;
+    }
+
+    &__profileContents {
+      margin: 32px auto 0;
+    }
+
+    &__profilePhoto {
+      display: block;
+      width: 86%;
+      margin: 0 auto;
+    }
+
+    &__profileText {
+      padding: 0 24px;
+      margin: 24px auto 0;
+    }
+
+    &__profileNameWrapper {
+      justify-content: center;
+    }
+
+    &__profilePosition {
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+
+    &__profileName {
+      margin-left: 32px;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    &__profileParagraph {
+      margin-top: 32px;
+      font-size: 14px;
+      line-height: 2.2;
+    }
+
+    &__profile {
+      padding: 40px 0 64px;
+    }
+  }
+}

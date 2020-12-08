@@ -34,18 +34,21 @@
   &__introMain {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
 
     img {
-      width: 45%;
+      width: 100%;
     }
+  }
+
+  &__introPicture {
+    width: 45%;
   }
 
   &__introMainText {
     margin-left: 5.5%;
 
     .c-button {
-      margin: 60px 0 0;
+      margin: 24px 0 0;
     }
   }
 
@@ -55,7 +58,7 @@
     font-size: 50px;
     font-weight: 500;
     color: variables.$gray;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
   }
 
   &__introParagraph {
@@ -144,7 +147,10 @@
 
   &__serviceIcons {
     display: flex;
+    align-items: center;
     width: 44px;
+    min-width: 44px;
+    margin-left: 12px;
   }
 
   &__serviceBlock {
@@ -206,6 +212,8 @@
 
   &__voiceParagraph {
     margin: 8px 0 0;
+    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体",
+      YuGothic, sans-serif;
     font-size: 15px;
   }
 
@@ -235,10 +243,13 @@
   &__columnWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 400px;
     grid-column-gap: 72px;
     width: variables.$content-width-xl;
     margin: 0 auto;
+
+    article {
+      margin-bottom: 72px;
+    }
   }
 
   &__columnItem {
@@ -270,6 +281,7 @@
     margin-left: 6px;
     font-size: 13px;
     color: variables.$gold;
+    letter-spacing: 1px;
   }
 
   &__columnTitle {
@@ -282,7 +294,7 @@
   &__banners {
     display: flex;
     max-width: variables.$content-width-sm;
-    margin: 48px auto 150px;
+    margin: 80px auto 150px;
   }
 
   &__bannerLink {
@@ -344,6 +356,8 @@
     }
 
     &__introPicture {
+      width: 100%;
+
       img {
         width: 80%;
       }
@@ -506,6 +520,7 @@
     }
 
     &__columnPostTime {
+      margin-left: 0;
       font-size: 12px;
     }
 

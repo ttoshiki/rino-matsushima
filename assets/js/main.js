@@ -11,17 +11,15 @@ jQuery(function() {
   });
 
   // ヘッダースクロール時固定
-  let _window = jQuery(window),
-  _header = jQuery(".header"),
-  heroBottom;
+  let headerElement = jQuery(".header")
 
-  _window.on("scroll", function () {
-    heroBottom = 52;
-    if (_window.scrollTop() > heroBottom) {
-      _header.addClass("-fixed");
+   jQuery(window).on("scroll", function () {
+    const heroBottom = 52;
+    if (jQuery(window).scrollTop() > heroBottom) {
+      headerElement.addClass("-fixed");
     } else {
       if (!(jQuery("#trigger").hasClass("active"))) {
-        _header.removeClass("-fixed");
+        headerElement.removeClass("-fixed");
       }
     }
   });
@@ -67,4 +65,21 @@ jQuery(function() {
     });
     jQuery(window).scroll();
   });
+
+  // ヘッダー固定
+  var _window = jQuery(window),
+  _header = jQuery(".header__nav"),
+  heroBottom;
+
+  _window.on("scroll", function () {
+    heroBottom = 80;
+    if (_window.scrollTop() > heroBottom) {
+      _header.addClass("-fixed");
+      _header.addClass("-hasLogoBgColor");
+    } else {
+      _header.removeClass("-fixed");
+    }
+  });
+
+  _window.trigger("scroll");
 })
