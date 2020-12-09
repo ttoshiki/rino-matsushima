@@ -144,7 +144,11 @@ get_header();
 						<?php while (have_posts()) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class('home__columnItem'); ?>>
 								<a href="<?php the_permalink(); ?>">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/column_01.png" alt="" class="wp-post-image">
+									<?php
+										if (has_post_thumbnail()) {
+												the_post_thumbnail();
+										}
+									?>
 									<div class="home__columnContents">
 										<div class="home__columnText">
 											<div class="home__columnMeta">
