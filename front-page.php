@@ -99,17 +99,18 @@ get_header();
 				</div>
 				<div class="home__serviceBlock l-singleCol" id="academy">
 					<div class="home__serviceBlock l-singleCol__col">
-						<a href="#" target="_blank" noopener>
+						<a href="" target="_blank" class="noevent" noopener>
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/service_03.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/home/service_03@2x.jpg 2x" alt="">
 							<div class="home__serviceContents">
 								<div class="home__serviceText">
 									<span class="home__serviceCaption">待望の新サービス登場</span>
 									<h3 class="home__serviceHeading -en">My will Academy</h3>
 								</div>
-								<picture class="home__serviceIcons">
+								<!-- <picture class="home__serviceIcons">
 									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.png" alt="矢印アイコン">
-								</picture>
+								</picture> -->
+								<p class="home__serviceParagraph -en">Comming soon!</p>
 							</div>
 						</a>
 					</div>

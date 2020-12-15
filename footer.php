@@ -28,9 +28,9 @@
 						<li class="footer__linkChildItem">
 							<a href="<?php echo home_url('#selfy'); ?>" class="footer__linkChild">-自撮りBoot Camp</a>
 						</li>
-						<li class="footer__linkChildItem">
+						<!-- <li class="footer__linkChildItem">
 							<a href="<?php echo home_url('#academy'); ?>" class="footer__linkChild">-My will Academy</a>
-						</li>
+						</li> -->
 					</ul>
 				</li>
 				<li class="footer__linkItem">
@@ -58,9 +58,9 @@
 						<li class="footer__linkChildItem">
 							<a href="<?php echo home_url('#selfy'); ?>" class="footer__linkChild">-自撮りBoot Camp</a>
 						</li>
-						<li class="footer__linkChildItem">
+						<!-- <li class="footer__linkChildItem">
 							<a href="<?php echo home_url('#academy'); ?>" class="footer__linkChild">-My will Academy</a>
-						</li>
+						</li> -->
 					</ul>
 				</li>
 			</ul>

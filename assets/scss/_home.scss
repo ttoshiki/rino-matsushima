@@ -161,6 +161,15 @@
     margin-left: 12px;
   }
 
+  &__serviceParagraph {
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+    margin: 0;
+    font-size: 30px;
+    color: variables.$gold;
+  }
+
   &__serviceBlock {
     position: relative;
 
@@ -171,6 +180,10 @@
         bottom: 24px;
       }
     }
+  }
+
+  .noevent {
+    pointer-events: none;
   }
 
   #profile,
@@ -464,6 +477,12 @@
       flex-direction: column;
       width: 94%;
       margin: 0 auto;
+    }
+
+    &__serviceParagraph {
+      right: 12px;
+      bottom: 8px;
+      font-size: 16px;
     }
 
     &__serviceContents {
