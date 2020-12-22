@@ -937,6 +937,7 @@ textarea {
     margin-left: 0;
   }
   .home__introMainText .c-button {
+    z-index: 10;
     margin: 8px 0 0;
   }
   .home__introDecorationImage.-lower {

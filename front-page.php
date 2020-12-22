@@ -72,7 +72,7 @@ get_header();
 							<div class="home__serviceContents">
 								<div class="home__serviceText">
 									<span class="home__serviceCaption">奇跡の１枚を撮る</span>
-									<h3 class="home__serviceHeading">ベアーズ専門のプロフィール撮影サービス</h3>
+									<h3 class="home__serviceHeading">ペアーズ専門のプロフィール撮影サービス</h3>
 								</div>
 								<picture class="home__serviceIcons">
 									<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/icons/arrow.webp" type="image/webp">
