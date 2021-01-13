@@ -46,7 +46,7 @@ get_header();
 					</p>
 				</div>
 				<picture class="about__messagePhoto">
-					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image-sp@2x.jpg" media="(max-width: 480px)">
+					<source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image-sp@2x.jpg" media="(max-width: 960px)">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image@2x.jpg" srcset="<?php echo get_template_directory_uri(); ?>/assets/images/about/message_image.jpg 1x, <?php echo get_template_directory_uri(); ?>/assets/images/about/message_image@2x.jpg 2x" alt="">
 				</picture>
 			</section>

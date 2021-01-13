@@ -1,8 +1,7 @@
 @use "variables";
 
 .footer {
-  min-width: 1296px;
-  padding: 40px 120px 40px 140px;
+  padding: 40px 5% 40px 10.85%;
   background-color: variables.$gold;
 
   &__upper {
@@ -30,7 +29,7 @@
     flex-direction: column;
 
     &:not(:first-child) {
-      margin-left: 72px;
+      margin-left: 5.56vw;
     }
   }
 
@@ -68,13 +67,14 @@
   }
 }
 
-@include variables.mq(variables.$mobile) {
+@include variables.mq(variables.$tablet) {
   .footer {
-    min-width: auto;
     padding: 48px 40px 24px;
 
     &__upper {
       flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .custom-logo {

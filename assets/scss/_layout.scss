@@ -1,7 +1,8 @@
 @use "variables";
 
 .l-singleCol {
-  width: variables.$content-width-xl;
+  max-width: 1296px;
+  padding: 0 48px;
   margin: 0 auto;
 
   &__col {
@@ -15,7 +16,9 @@
 .l-doubleCol {
   display: flex;
   justify-content: center;
-  width: variables.$content-width-xl;
+  width: 100%;
+  max-width: 1296px;
+  padding: 0 48px;
   margin: 0 auto;
 
   &__col {
@@ -25,7 +28,26 @@
 
     a {
       display: block;
+      height: 100%;
       box-shadow: 0px 0px 15px 0px rgba(100, 100, 100, 0.3);
+    }
+  }
+}
+
+@include variables.mq(variables.$tablet) {
+  .l-singleCol {
+    &__col {
+      a {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .l-doubleCol {
+    &__col {
+      &:not(:first-child) {
+        margin-left: auto;
+      }
     }
   }
 }
@@ -37,6 +59,8 @@
   }
 
   .l-singleCol {
+    padding: 0;
+
     &__col {
       a {
         flex-direction: column;
@@ -45,6 +69,8 @@
   }
 
   .l-doubleCol {
+    padding: 0;
+
     &__col {
       &:not(:first-child) {
         margin: 48px auto 0;

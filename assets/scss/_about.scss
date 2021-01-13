@@ -44,7 +44,7 @@
 
   &__message {
     position: relative;
-    width: 1160px;
+    max-width: 1160px;
     padding: 0 48px;
     margin: 80px auto 0;
 
@@ -181,17 +181,19 @@
   }
 }
 
-@include variables.mq(variables.$mobile) {
+@include variables.mq(variables.$tablet) {
   .about {
     &__mainVisualWrapper {
       height: 73vw;
       min-height: auto;
+      max-height: 400px;
     }
 
     &__mainVisual {
       &.-front {
         width: 87%;
         height: 63vw;
+        max-height: 340px;
 
         img {
           height: 100%;
@@ -204,6 +206,7 @@
         width: 88%;
         height: 73vw;
         min-height: auto;
+        max-height: 400px;
       }
     }
 
@@ -213,7 +216,8 @@
     }
 
     &__message {
-      width: 100%;
+      width: 80%;
+      max-width: 640px;
       padding: 0 16px;
       margin: 48px auto 0;
     }
@@ -225,6 +229,10 @@
     &__messagePhoto {
       position: relative;
       top: auto;
+
+      img {
+        max-width: 400px;
+      }
     }
 
     &__messageParagraph {
@@ -280,6 +288,11 @@
       margin: 64px auto 0;
     }
 
+    &__valueItem {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     &__valueItem:nth-child(2),
     &__valueItem:nth-child(3) {
       margin-top: 48px;
@@ -292,6 +305,7 @@
     &__profilePhoto {
       display: block;
       width: 86%;
+      max-width: 480px;
       margin: 0 auto;
     }
 
@@ -323,6 +337,24 @@
 
     &__profile {
       padding: 40px 0 64px;
+    }
+  }
+}
+
+@include variables.mq(variables.$mobile) {
+  .about {
+    &__message {
+      width: 100%;
+    }
+
+    &__messagePhoto {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__valueItem {
+      width: 100%;
     }
   }
 }

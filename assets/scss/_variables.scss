@@ -18,13 +18,14 @@ $pink: #ffeeeb;
 // Width Rule
 $content-width-xxs: 480px;
 $content-width-xs: 769px;
+$content-width-s: 960px;
 $content-width-sm: 1000px;
 $content-width-md: 1100px;
 $content-width-xl: 1200px;
 
 // media-query
 $mobile: $content-width-xxs;
-$tablet: $content-width-xs;
+$tablet: $content-width-s;
 $pc: $content-width-sm;
 
 @mixin mq($break-point) {

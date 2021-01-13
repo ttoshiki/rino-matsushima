@@ -95,7 +95,7 @@
   }
 }
 
-@include variables.mq(variables.$mobile) {
+@include variables.mq(variables.$tablet) {
   .header {
     &.-fixed {
       position: fixed;
@@ -142,7 +142,9 @@
           align-items: center;
           justify-content: center;
           padding: 6vw 4px 5.6vw 13px;
-          background-color: #fe90a3;
+          padding-top: min(6vw, 24px);
+          padding-bottom: min(6vw, 24px);
+          background-color: #fe92a3;
         }
 
         .header__hammenuWrapper {
@@ -179,7 +181,7 @@
         letter-spacing: 3px;
 
         &:not(:first-child) {
-          margin-top: 17.6vw;
+          margin-top: min(17.6vw, 80px);
         }
       }
     }
@@ -202,6 +204,10 @@
       position: relative;
       width: 52px;
       height: 52px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &__trigger span {
